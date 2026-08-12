@@ -4,7 +4,7 @@ A simple dynamic resume builder built using HTML, CSS and JavaScript.
 
 ## 🚀 Live Demo
 
-[View Live Demo](js-mini-projects-64nm4c6y6-flashrandoms-projects.vercel.app)
+[View Live Demo](https://js-mini-projects-wine.vercel.app/)
 
 ## 🛠️ Technologies Used
 
