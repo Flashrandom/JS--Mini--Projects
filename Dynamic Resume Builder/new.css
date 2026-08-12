@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+#form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+#cv-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#cv-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#cv-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+#cv-form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#cv-form button:hover {
+    background: #0056b3;
+}
+
+
+/* =========================
+   RESUME CONTAINER
+========================= */
+
+#resume-container {
+    display: none;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-top: 5px solid #28a745;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resume-container h1 {
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+#resume-container p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+#resume-container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+#resume-container h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+/* =========================
+   PRINT BUTTON
+========================= */
+
+#print-btn {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#print-btn:hover {
+    background: #111;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #form-container,
+    #resume-container {
+        margin: 20px auto;
+        padding: 25px;
+    }
+
+    #resume-container h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================
+   PRINT STYLING
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    #resume-container {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 30px;
+        box-shadow: none;
+        border-top: none;
+    }
+
+    #print-btn {
+        display: none;
+    }
+}

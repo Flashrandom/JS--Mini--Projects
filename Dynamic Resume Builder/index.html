@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhai Ka Resume Builder</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px;">
+
+    <!-- 📝 PART 1: Data Entry Form -->
+    <div id="form-container" style="max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; color: #333;">Enter Your Details ✍️</h2>
+        
+        <form id="cv-form">
+            <label>Full Name</label><br>
+            <input type="text" id="nameField" placeholder="e.g. Gaurav Rathore" style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+            
+            <label>Phone Number</label><br>
+            <input type="text" id="contactField" placeholder="9876543210" style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+            
+            <label>Degree / Education</label><br>
+            <input type="text" id="eduField" placeholder="e.g. B.Tech Computer Science" style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+            
+            <label>Top Achievement / Skill</label><br>
+            <input type="text" id="skillField" placeholder="e.g. Solved 150+ DSA questions on LeetCode" style="width: 100%; padding: 8px; margin-bottom: 20px;"><br>
+            
+            <button type="submit" style="width: 100%; padding: 12px; background: #007BFF; color: white; border: none; cursor: pointer; font-size: 16px;">Generate Resume 🚀</button>
+        </form>
+    </div>
+
+    <!-- 📄 PART 2: The Final Resume Template (Shuru me hidden hai) -->
+    <div id="resume-container" style="display: none; max-width: 600px; margin: auto; background: white; padding: 40px; border-top: 5px solid #28a745; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <h1 id="nameT" style="color: #28a745; margin-bottom: 5px;"></h1>
+        <p>📞 <span id="contactT"></span></p>
+        <hr>
+        
+        <h3>🎓 Education</h3>
+        <p id="eduT"></p>
+        
+        <h3>💼 Top Skills & Achievements</h3>
+        <p id="skillT"></p>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <button id="print-btn" style="padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer;">Print Resume 🖨️</button>
+        </div>
+    </div>
+
+    <!-- JS File yahan connect ki hai -->
+    <script src="new.js"></script>
+</body>
+</html>
